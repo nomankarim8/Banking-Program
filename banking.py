@@ -36,7 +36,7 @@ def withdraw(balance):
     else:
         return amount
     # CODED BY nomankarim8
-# CODED BY nomankarim8
+    # CODED BY nomankarim8
 def main():
     balance = 0
     is_running = True
