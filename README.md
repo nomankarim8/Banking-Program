@@ -86,3 +86,5 @@ Feel free to submit issues or pull requests if you have suggestions for improvem
 
 ```
 
+You can customize the sections under "Author" and "Contributing" as needed. Make sure to replace placeholders like `your-username` and `your name` with your actual GitHub username and name.
+
