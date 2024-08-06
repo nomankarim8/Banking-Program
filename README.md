@@ -1,6 +1,4 @@
-Here's a `README.md` file for your Python Banking Program:
 
-```markdown
 # Python Banking Program
 
 This Python Banking Program allows users to perform basic banking operations such as checking the balance, depositing money, and withdrawing money. It runs in a console environment, prompting the user for input and displaying the current balance.
@@ -84,8 +82,7 @@ Feel free to submit issues or pull requests if you have suggestions for improvem
 
 ## Author
 
-- [Your Name](https://github.com/your-username)
+- [nomankarim8](https://github.com/nomankarim8)
 
 ```
 
-You can customize the sections under "Author" and "Contributing" as needed. Make sure to replace placeholders like `your-username` and `your name` with your actual GitHub username and name.
