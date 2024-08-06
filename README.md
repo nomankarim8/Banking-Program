@@ -19,7 +19,7 @@ This Python Banking Program allows users to perform basic banking operations suc
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/your-username/python-banking-program.git
+    git clone https://github.com/nomankarim8/python-banking-program.git
     cd python-banking-program
     ```
 
