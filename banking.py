@@ -1,4 +1,4 @@
-# Input Validation: The program now handles invalid inputs more gracefully, ensuring that only positive numeric values are accepted for deposits and withdrawals.
+# 
 def show_balance(balance):
     print("\n" + "*" * 25)
     print(f"Your balance is: ${balance:.2f}")
