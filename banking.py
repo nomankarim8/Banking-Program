@@ -1,115 +1,53 @@
-# Python Banking Program
-# I make it for Just Educational Purpose
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 def show_balance(balance):
-    print("*********************")
-    print(f"Your balance is ${balance:.2f}")
-    print("*********************")
-    # CODED BY nomankarim8
+    print("\n" + "*" * 25)
+    print(f"Your balance is: ${balance:.2f}")
+    print("*" * 25 + "\n")
+
 def deposit():
-    print("*********************")
-    amount = float(input("Enter an amount to be deposited: "))
-    print("*********************")
-    if amount < 0:
-        print("*********************")
-        print("That's not a valid amount")
-        print("*********************")
-        return 0
-    else:
-        return amount
-    # CODED BY nomankarim8
+    while True:
+        try:
+            amount = float(input("Enter an amount to deposit: $"))
+            if amount <= 0:
+                print("Deposit amount must be greater than $0.00")
+            else:
+                print(f"${amount:.2f} has been successfully deposited.")
+                return amount
+        except ValueError:
+            print("Please enter a valid number.")
+
 def withdraw(balance):
-    print("*********************")
-    amount = float(input("Enter amount to be withdrawn: "))
-    print("*********************")
-    # CODED BY nomankarim8
-    if amount > balance:
-        print("*********************")
-        print("Insufficient funds")
-        print("*********************")
-        return 0
-    elif amount < 0:
-        print("*********************")
-        print("Amount must be greater than 0")
-        print("*********************")
-        return 0
-    else:
-        return amount
-    # CODED BY nomankarim8
-    # CODED BY nomankarim8
+    while True:
+        try:
+            amount = float(input("Enter an amount to withdraw: $"))
+            if amount <= 0:
+                print("Withdrawal amount must be greater than $0.00")
+            elif amount > balance:
+                print("Insufficient funds. You cannot withdraw more than your balance.")
+            else:
+                print(f"${amount:.2f} has been successfully withdrawn.")
+                return amount
+        except ValueError:
+            print("Please enter a valid number.")
+
 def main():
-    balance = 0
-    is_running = True
-    # CODED BY nomankarim8
-    while is_running:
-        print("*********************")
-        print("   Banking Program   ")
-        print("*********************")
-        print("1.Show Balance")
-        print("2.Deposit")
-        print("3.Withdraw")
-        print("4.Exit")
-        print("*********************")
+    balance = 0.0
+    options = {
+        '1': "Show Balance",
+        '2': "Deposit",
+        '3': "Withdraw",
+        '4': "Exit"
+    }
+
+    while True:
+        print("\n" + "*" * 25)
+        print("   Welcome to the Banking Program")
+        print("*" * 25)
+        for key, value in options.items():
+            print(f"{key}. {value}")
+        print("*" * 25)
+
         choice = input("Enter your choice (1-4): ")
-        # CODED BY nomankarim8
-        # CODED BY nomankarim8
+
         if choice == '1':
             show_balance(balance)
         elif choice == '2':
@@ -117,18 +55,10 @@ def main():
         elif choice == '3':
             balance -= withdraw(balance)
         elif choice == '4':
-            is_running = False
+            print("\nThank you for using the Banking Program. Have a nice day!")
+            break
         else:
-            print("*********************")
-            print("That is not a valid choice")
-            print("*********************")
-            # CODED BY nomankarim8
-    print("*********************")
-    print("Thank you! Have a nice day!")
-    print("*********************")
-    # CODED BY nomankarim8
+            print("\nInvalid choice. Please select a valid option.")
+
 if __name__ == '__main__':
     main()
-# CODED BY nomankarim8
-# CODED BY nomankarim8
-# CODED BY nomankarim8
