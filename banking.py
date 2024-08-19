@@ -1,4 +1,3 @@
-
 def show_balance(balance):
     print("\n" + "*" * 25)
     print(f"Your balance is: ${balance:.2f}")
